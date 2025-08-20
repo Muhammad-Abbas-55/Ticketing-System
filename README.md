@@ -1,66 +1,88 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+  <h1 style="color: #2c3e50;">🎫 Ticketing System</h1>
 
-## About Laravel
+  <p>A Laravel-based Ticketing System designed using modern web development practices and tools.</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+  <h2 style="color: #34495e;">🚀 Technologies & Tools Used</h2>
+  <ul>
+    <li><b>MVC Architecture</b></li>
+    <li><b>Laravel</b> (PHP Framework)</li>
+    <li><b>Yajra Datatables</b> (Efficient table handling)</li>
+    <li><b>Ajax</b> (Used for all form submissions)</li>
+    <li><b>Spatie Role & Permission Package</b> (Role-based access control)</li>
+    <li><b>Laravel Breeze</b> (Authentication scaffolding)</li>
+    <li><b>Filepond</b> (Modern file upload interface)</li>
+    <li><b>Logs</b> (Ticket Logs with created or updated time)</li>
+    <li><b>HTML / CSS / Bootstrap</b></li>
+    <li><b>MySQL</b></li>
+    <li><b>Database Seeder</b> (For initial data population)</li>
+    <li><b>Many-to-Many Relationships</b></li>
+  </ul>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  <h2 style="color: #34495e;">📊 Dashboard & User Roles</h2>
+  <p>Each user is assigned one of the following roles:</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+  <h3 style="margin-top: 10px;">1. <b>Regular User</b> (Default)</h3>
+  <ul>
+    <li>Can view only their own tickets.</li>
+    <li>Can create new tickets.</li>
+    <li><b>Cannot</b> edit or delete tickets.</li>
+  </ul>
 
-## Learning Laravel
+  <h3 style="margin-top: 10px;">2. <b>Agent</b></h3>
+  <ul>
+    <li>Can view tickets <b>assigned</b> to them by an Admin.</li>
+    <li>Can <b>edit</b> those tickets and <b>add comments</b>.</li>
+  </ul>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+  <h3 style="margin-top: 10px;">3. <b>Admin</b></h3>
+  <ul>
+    <li>Full system access and management:</li>
+    <ul>
+      <li>View all tickets and menu items.</li>
+      <li>Dashboard with ticket status count.</li>
+      <li>Manage roles, permissions, labels, categories, priorities, and users.</li>
+      <li>Assign agents to tickets.</li>
+      <li>View <b>ticket logs</b> showing full change history.</li>
+      <li><b>Email Notifications</b>: Receives email with ticket edit link when new ticket is created.</li>
+    </ul>
+  </ul>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+  <h2 style="color: #34495e;">📬 Email Notifications</h2>
+  <ul>
+    <li>Admin receives an email whenever a new ticket is generated.</li>
+    <li>Email includes a direct link to the ticket’s edit form.</li>
+  </ul>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+  <h2 style="color: #34495e;">📂 Features Summary</h2>
+  <ul>
+    <li>Role-based access with Spatie</li>
+    <li>Seamless UX using Ajax</li>
+    <li>Real-time file uploads with Filepond</li>
+    <li>Organized data management via Laravel's seeder</li>
+    <li>Ticket history logs for accountability and tracking</li>
+  </ul>
 
-## Laravel Sponsors
+  <hr>
+  <p style="font-size: 14px;">Feel free to fork, contribute, or use this project for your own needs.</p>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-### Premium Partners
+![image](https://github.com/user-attachments/assets/e3cb9ea4-ee74-495e-8147-45ce65360f6f)
+![image](https://github.com/user-attachments/assets/71310336-8db4-4d65-8475-e441ec1f2f07)
+![image](https://github.com/user-attachments/assets/1e138e72-40b9-4e47-a7cf-99f1705ebb54)
+![image](https://github.com/user-attachments/assets/d2d6dcf5-11b8-4497-a794-8501bea77349)
+![image](https://github.com/user-attachments/assets/234a0f76-58bc-4b5e-a7c2-c5815872ad39)
+![image](https://github.com/user-attachments/assets/4e683fba-4603-4844-9809-4f41c99cdc52)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+</body>
+</html>
