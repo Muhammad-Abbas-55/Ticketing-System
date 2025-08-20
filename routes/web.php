@@ -6,6 +6,7 @@ use App\Http\Controllers\LabelController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -15,6 +16,9 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::resource('students', StudentController::class);
+Route::view('/std','students.index');
 
 
 Route::middleware('auth')->group(function () {
@@ -48,6 +52,8 @@ Route::middleware('auth')->group(function () {
 
     
 });
+
+
 
 
 require __DIR__ . '/auth.php';
